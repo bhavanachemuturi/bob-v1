@@ -3,6 +3,7 @@
 ## System Concept
 
 A lightweight framework that integrates AI capabilities into Carbon Design System components while promoting efficient usage through monitoring, caching, and intelligent request management.
+<img width="1920" height="1080" alt="Screenshot 2026-06-24 at 11 56 08 AM" src="https://github.com/user-attachments/assets/cf8c1971-b5d4-4c05-b7e7-01f0ad2b4ad8" />
 
 ## Core Principles
 
