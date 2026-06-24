@@ -1,0 +1,91 @@
+.card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 0;
+  margin-bottom: 16px;
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.card__header-content {
+  flex: 1;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #161616;
+  line-height: 1.4;
+}
+
+.card__subtitle {
+  margin: 4px 0 0 0;
+  font-size: 14px;
+  color: #525252;
+  line-height: 1.4;
+}
+
+.card__actions {
+  display: flex;
+  gap: 8px;
+  margin-left: 16px;
+}
+
+.card__body {
+  padding: 20px;
+}
+
+/* Status variants */
+.card--loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.card--loading .card__body::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #e0e0e0 25%, #f4f4f4 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  margin-bottom: 16px;
+  border-radius: 2px;
+}
+
+.card--error {
+  border-color: #da1e28;
+}
+
+.card--success {
+  border-color: #24a148;
+}
+
+.card--cached {
+  border-color: #0f62fe;
+  background: #f4f9ff;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Made with Bob */
